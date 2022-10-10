@@ -12,8 +12,8 @@
 
 .app {
   width: 100%;
-  padding: 5em;
-  min-width: 450pxs;
+  padding: 4em;
+  min-width: 450px;
   box-sizing: border-box;
   font-family: "quadranta", sans-serif;
   &__button {
@@ -50,7 +50,7 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 14400px) {
   .app {
     padding: 2.5em;
   }
