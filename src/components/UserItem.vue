@@ -1,7 +1,25 @@
 <template>
-  <div>
-    Пользователь {{user.userId}} 
-    <span> {{ user.countCompleted}} / {{user.todos.length - user.countCompleted }} </span>
+  <div class="user-item">
+    <img src="../../src/assets/image/photo.png" class="user-item__photo" alt="Фотография"/>
+    <div class="user-item__info">
+      <h2 class="user-item__name">
+        Пользователь {{user.userId}}
+        <p class="user-item__result">
+          <span class="user-item__result-success">
+            {{ user.countCompleted}}
+          </span> /
+          <span class="user-item__result-fail">
+            {{user.todos.length - user.countCompleted }}
+          </span>
+        </p>
+      </h2>
+      <ul class="user-item__todos-list">
+        <li v-for="todo in user.todos" :key="todo.id"
+            :class="[todo.completed ? 'user-item__todos-item success' : '', 'user-item__todos-item']">
+          {{ todo.title }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

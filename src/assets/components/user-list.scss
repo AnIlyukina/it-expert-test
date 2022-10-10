@@ -1,0 +1,19 @@
+.user-list{
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: black;
+  list-style-type: none;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  padding: 0;
+  &__item{
+    border: .1em solid black;
+    //border-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    //border-image-slice: 1;
+    padding: 1em;
+    border-radius: 2em 0 2em 0;
+
+
+  }
+}

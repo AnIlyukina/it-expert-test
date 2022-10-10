@@ -1,6 +1,6 @@
 <template>
-  <ul>
-    <li v-for="user in sortedUsers" :key="user.userId">
+  <ul class="user-list">
+    <li class="user-list__item" v-for="user in sortedUsers" :key="user.userId">
       <UserItem
         :user="user"
       />
