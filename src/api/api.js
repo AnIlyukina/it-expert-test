@@ -10,7 +10,7 @@ const getServerResponse = (response) => {
 export const getUsersDate = () => {
   return fetch(BASE_URL, {
     headers: {
-      'Content-Type': 'application/json'
-    }
-  }).then((res) => getServerResponse(res))
-}
+      "Content-Type": "application/json",
+    },
+  }).then((res) => getServerResponse(res));
+};

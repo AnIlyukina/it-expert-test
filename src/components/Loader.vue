@@ -1,12 +1,11 @@
 <template>
   <div class="loader">
     <span>Загрузка...</span>
-</div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Loader',
-
-}
+  name: "Loader",
+};
 </script>

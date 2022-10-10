@@ -1,61 +1,63 @@
-.body{
+.body {
   margin: 0;
-  background-color: #FAFAFA;
-
+  background-color: #fafafa;
 }
 
-@import './fonts.scss';
-@import './variables.scss';
-@import './components/tabs';
-@import './components/loader.scss';
-@import './components/user-list.scss';
-@import './components/user-item';
-@import './components/bar-chart';
+@import "./fonts.scss";
+@import "./components/tabs";
+@import "./components/loader.scss";
+@import "./components/user-list.scss";
+@import "./components/user-item";
+@import "./components/bar-chart";
 
- .app {
-   width: 100%;
-   padding: 5em;
-   min-width: 450px;
-   box-sizing: border-box;
-   font-family: 'quadranta', sans-serif;
-   &__button{
-     margin: 0 auto 2em;
-     text-decoration: none;
-     display: block;
-     color: white;
-     padding: 20px 30px;
-     border-radius: 10px;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     border: none;
-     background-image: linear-gradient(to right, #E91E63 0%, #31f545 51%, #E91E63 100%);
-     background-size: 200% auto;
-     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-     transition: .5s;
-     cursor: pointer;
-   }
-   &__button:hover {
-     background-position: right center;
-   }
-   &__button:disabled {
-     opacity: 0.5;
-     cursor: default;
+.app {
+  width: 100%;
+  padding: 5em;
+  min-width: 450pxs;
+  box-sizing: border-box;
+  font-family: "quadranta", sans-serif;
+  &__button {
+    margin: 0 auto 2em;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 2em 3em;
+    border-radius: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    background-image: linear-gradient(
+      to right,
+      #e91e63 0%,
+      #31f545 51%,
+      #e91e63 100%
+    );
+    background-size: 200% auto;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background-position: right center;
+  }
+  &__button:disabled {
+    opacity: 0.5;
+    cursor: default;
 
-     &:hover {
-       background-position: 0%;
-     }
-   }
- }
+    &:hover {
+      background-position: 0%;
+    }
+  }
+}
 
-
-@media (max-width:1250px) {
-  .app{
+@media (max-width: 1250px) {
+  .app {
     padding: 2.5em;
   }
 }
 
-@media (max-width:450px) {
-  .app{
+@media (max-width: 450px) {
+  .app {
     padding: 1.5em;
   }
 }

@@ -1,35 +1,35 @@
-.user-item{
+.user-item {
   display: flex;
 
   &__photo {
     width: 4em;
     height: 4em;
-    padding: .3em;
+    padding: 0.3em;
     border-radius: 1em;
     margin-top: 1em;
     background-color: #f1f1f1;
   }
-  &__info{
+  &__info {
     width: 100%;
     margin-left: 1.5em;
   }
-  &__title{
+  &__title {
     margin: 0;
     display: flex;
     justify-content: space-between;
   }
-  &__result{
+  &__result {
     display: inline;
     margin: 0;
   }
 
-  &__result-success{
+  &__result-success {
     color: #31f545;
   }
-  &__result-fail{
-    color: #E91E63;
+  &__result-fail {
+    color: #e91e63;
   }
-  &__todos-list{
+  &__todos-list {
     overflow-y: scroll;
     height: 9em;
     margin-top: 1em;
@@ -40,33 +40,32 @@
   }
 
   &__todos-list::-webkit-scrollbar-track {
-    --webkit-box-shadow: .5em .5em .5em -.5em rgba(34, 60, 80, 0.2) inset;
+    --webkit-box-shadow: 0.5em 0.5em 0.5em -0.5em rgba(34, 60, 80, 0.2) inset;
     background-color: #f1f1f1;
     border-radius: 1em;
   }
 
   &__todos-list::-webkit-scrollbar-thumb {
     border-radius: 1em;
-    background: linear-gradient(180deg, #31f545, #E91E63);
+    background: linear-gradient(180deg, #31f545, #e91e63);
   }
 
   &__todos-item {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     margin-right: 1em;
-
   }
 }
 
-@media (max-width:1400px) {
-  .user-item{
-    &__title{
+@media (max-width: 1400px) {
+  .user-item {
+    &__title {
       font-size: 1.2em;
     }
   }
 }
 
-@media (max-width:950px) {
-  .user-item{
+@media (max-width: 950px) {
+  .user-item {
     &__photo {
       width: 3em;
       height: 3em;

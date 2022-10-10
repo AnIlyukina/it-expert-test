@@ -1,14 +1,22 @@
 <template>
   <div class="tab-block">
-    <a href="#"
-       :class="[activeTab === 'userList' ? 'tab-block__tab active': '','tab-block__tab']"
-       @click.prevent="changeTab('userList')"
+    <a
+      href="#"
+      :class="[
+        activeTab === 'userList' ? 'tab-block__tab active' : '',
+        'tab-block__tab',
+      ]"
+      @click.prevent="changeTab('userList')"
     >
       Общий список
     </a>
-    <a href="#"
-       :class="[activeTab === 'barChart' ? 'tab-block__tab active': '','tab-block__tab']"
-       @click.prevent="changeTab('barChart')"
+    <a
+      href="#"
+      :class="[
+        activeTab === 'barChart' ? 'tab-block__tab active' : '',
+        'tab-block__tab',
+      ]"
+      @click.prevent="changeTab('barChart')"
     >
       Показатели
     </a>
@@ -21,15 +29,13 @@ export default {
   props: {
     activeTab: {
       type: String,
-      default: 'userList'
-    }
+      default: "userList",
+    },
   },
   methods: {
     changeTab(tab) {
-      this.$emit('changeTab', tab)
-    }
-  }
-}
+      this.$emit("changeTab", tab);
+    },
+  },
+};
 </script>
-
-

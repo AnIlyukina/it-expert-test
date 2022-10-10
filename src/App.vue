@@ -1,36 +1,31 @@
 <template>
-  <button
-    class="app__button"
-    :disabled="isSendRequest"
-    @click="getDate"
-  >
+  <button class="app__button" :disabled="isSendRequest" @click="getDate">
     Получить данные
   </button>
-  <Loader v-if="isLoader"/>
-  <UserDate
-    v-if="usersList.length"
-    :usersList="usersList"/>
+
+  <Loader v-if="isLoader" />
+
+  <UserBlock v-if="usersList.length" :usersList="usersList" />
 </template>
 
 <script>
-
-import { getUsersDate } from './api/api'
-import UserDate from './components/UsersDate.vue'
+import { getUsersDate } from "./api/api";
+import UserBlock from "@/components/UsersBlock";
 import Loader from "@/components/Loader";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    UserDate,
-    Loader
+    UserBlock,
+    Loader,
   },
-  data () {
+  data() {
     return {
       usersList: [],
       isLoader: false,
       isSendRequest: false,
-      errorMessage: ''
-    }
+      errorMessage: "",
+    };
   },
   methods: {
     async getDate() {
@@ -39,18 +34,17 @@ export default {
       this.errorMessage = "";
       try {
         this.usersList = await getUsersDate();
-
       } catch (e) {
         this.isSendRequest = false;
         this.errorMessage = "Что-то пошло не так, попробуйте позже";
       } finally {
         this.isLoader = false;
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss">
-@import './assets/app.scss';
+  @import "./assets/app.scss";
 </style>

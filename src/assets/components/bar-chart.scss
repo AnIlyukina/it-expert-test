@@ -1,23 +1,23 @@
-.bar-chart{
+.bar-chart {
   margin-top: 3em;
   max-width: 100%;
-  &__apexcharts{
+  &__apexcharts {
     box-sizing: border-box;
     width: 800px;
     margin: 0 auto;
   }
 }
-@media (max-width:950px) {
-  .bar-chart{
-    &__apexcharts{
+@media (max-width: 950px) {
+  .bar-chart {
+    &__apexcharts {
       width: 600px;
     }
   }
 }
 
-@media (max-width:800px) {
-  .bar-chart{
-    &__apexcharts{
+@media (max-width: 800px) {
+  .bar-chart {
+    &__apexcharts {
       width: 100%;
     }
   }
