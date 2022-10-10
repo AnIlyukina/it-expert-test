@@ -49,10 +49,6 @@ export default {
       xaxis: {
         categories: this.sortedUsers.map(user => 'User ' + user.userId)
       },
-      legend: {
-        position: 'right',
-        offsetY: 40
-      },
       fill: {
         colors: ['#31f545', '#E91E63'],
         opacity: 0.8,

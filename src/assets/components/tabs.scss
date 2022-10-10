@@ -1,8 +1,8 @@
 .tab-block{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 3em;
-  border-top: 0.1em solid #ffa0c3;
+
   &__tab {
     display: inline-block;
     color: black;
@@ -14,6 +14,30 @@
 
     &.active {
       border-bottom: 0.1em solid black;
+    }
+  }
+}
+@media (max-width:950px) {
+  .tab-block{
+    &__tab {
+      padding: 0 3.5em 0.1em;
+    }
+  }
+}
+
+@media (max-width:700px) {
+  .tab-block{
+    &__tab {
+      padding: 0 1.5em 0.1em;
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .tab-block{
+    &__tab {
+      font-size: 1.2em;
+      padding: 0 1em 0.1em;
     }
   }
 }

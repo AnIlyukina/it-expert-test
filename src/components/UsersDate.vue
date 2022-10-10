@@ -9,8 +9,8 @@
 
 <script>
 import Tabs from "@/components/Tabs";
-import UsersList from './UsersList.vue'
-import BarChart from './BarChart.vue'
+import UsersList from '@/components/UsersList';
+import BarChart from '@/components/BarChart';
 
 export default {
 name: 'UsersDate',
@@ -26,7 +26,7 @@ data () {
 },
 props: {
   usersList: {
-    type: Function,
+    type: Array,
     default: () => {
       return []
     }

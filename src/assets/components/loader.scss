@@ -5,7 +5,7 @@
   font-size: 1.5em;
   box-sizing: border-box;
   color: black;
-  border-top: 0.3em solid hotpink;
+  border-top: 0.3em solid #31f545;
   border-radius: 50%;
   position: relative;
   animation: rotating 2s ease-in-out infinite;
@@ -24,12 +24,12 @@
 }
 
 .loader::before {
-  border-top: 0.3em solid dodgerblue;
+  border-top: 0.3em solid #E91E63;
   transform: rotate(120deg);
 }
 
 .loader::after {
-  border-top: 0.3em solid gold;
+  border-top: 0.3em solid #f1f1f1;
   transform: rotate(240deg);
 }
 

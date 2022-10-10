@@ -2,7 +2,7 @@
   <div class="user-item">
     <img src="../../src/assets/image/photo.png" class="user-item__photo" alt="Фотография"/>
     <div class="user-item__info">
-      <h2 class="user-item__name">
+      <h2 class="user-item__title">
         Пользователь {{user.userId}}
         <p class="user-item__result">
           <span class="user-item__result-success">
@@ -28,7 +28,7 @@ export default {
   name: 'UserItem',
   props: {
     user: {
-      type: Function,
+      type: Object,
       default: () => {
         return {}
       }
