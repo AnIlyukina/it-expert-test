@@ -54,3 +54,14 @@
     transform: rotate(calc(360deg * var(--direction)));
   }
 }
+
+@media (max-width:500px) {
+  .loader {
+    width: 13em;
+    height: 13em;
+    font-size: 1em;
+  }
+  .loader span {
+    line-height: 13em;
+  }
+}
